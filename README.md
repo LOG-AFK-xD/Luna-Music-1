@@ -53,7 +53,7 @@
 | `/rmd` | clean all downloaded files |
 ## Heroku Deployment 💜the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/unknownvip/Luna-Music)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/unknownvip/Luna-Music#main)
 
 ## VPS Deployment 📡
 Get the best Quality of streaming performance by hosting it on VPS, here's the step's:
