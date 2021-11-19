@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/Luna_MusicBot"><img src="https://github.com/unknownvip/Luna-Music/raw/main/driver/veezlogo.png"></a></p>
+<p align="center"><a href="https://t.me/Luna_MusicBot"><img src="https://github.com/unknownvip/Luna-Music/raw/main/driver/Lunalogo.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
@@ -65,7 +65,7 @@ pip3 install -U pip
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
 sudo apt-get install -y nodejs
 npm i -g npm
-git clone https://github.com/levina-lab/video-stream # clone the repo.
+git clone https://github.com/unknownvip/Luna-Music # clone the repo.
 cd video-stream
 pip3 install -U -r requirements.txt
 cp example.env .env # use vim to edit ENVs
