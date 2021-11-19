@@ -25,20 +25,6 @@
   <img src="https://telegra.ph/file/0b7b6460e1dc3a8bbf5be.jpg">
 </p>
 
-## ✨ Features
-- Music & Video stream support
-- MultiChat support
-- Playlist & Queue support
-- Skip, Pause, Resume, Stop feature
-- Music & Video downloader feature
-- Inline Search support
-- YouTube direct search support
-- YouTube/Local/Live/m3u8 stream support
-- Inline Search support
-- Control With Button support
-- Volume Control
-- Userbot Auto Join
-- Direct Updater
 
 ## 🛠 Commands:
 | Command | Description |
@@ -91,13 +77,6 @@ python3 main.py # run the bot.
 
 # Credits 💖
 
-- [Levina](https://github.com/levina-lab) ``Dev``
-- [Zxce3](https://github.com/Zxce3) ``Dev``
-- [DoellBarr](https://github.com/DoellBarr) ``Dev``
-- [tofikdn](https://github.com/tofikdn) ``Dev``
-- [Hunter-XDD](https://github.com/Hunter-XDD) ``Dev``
-- [Laky's](https://github.com/Laky-64) for [``py-tgcalls``](https://github.com/pytgcalls/pytgcalls)
-- [Dan](https://github.com/delivrance) for [``Pyrogram``](https://github.com/pyrogram)
 
 ### Support & Updates 🎑
-<a href="https://t.me/VeezSupportGroup"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/levinachannel"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/The_Secret_Worlds"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/Team_Blaze_Fighter"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
