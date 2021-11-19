@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
+# Copyright (C) 2021 By LunaMusicProject
 
 from driver.queues import QUEUE
 from pyrogram import Client, filters
@@ -17,35 +17,30 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
+💭 **[{BOT_NAME}](https://t.me/{Luna_MusicBot}) allows you to play music and video on groups through the new Telegram's video chats!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 Cᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+🔖 ** Tᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ Bᴀsɪᴄ Gᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
+""",!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        "➕ Aᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ➕",
+                        url=f"https://t.me/{Luna_MusicBot}?startgroup=true",
                     )
-                ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
-                [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
-                ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴩ", url=f"https://t.me/{The_Secret_worlds}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Oꜰꜰɪᴄɪᴀʟ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Team_Blaze_Fighter}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 ᴏᴡɴᴇʀ", url="https://t.me/{Harsh_sHukla_xd}"
                     )
                 ],
             ]
@@ -62,7 +57,7 @@ async def cbguides(_, query: CallbackQuery):
 1.) **First, add me to your group.**
 2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
 3.) **After promoting me, type /reload in group to refresh the admin data.**
-3.) **Add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.**
+3.) **Add @{Luna_x_Assistant} to your group or type /userbotjoin to invite her.**
 4.) **Turn on the video chat first before start to play video/music.**
 5.) **Sometimes, reloading the bot by using /reload command can help you to fix some problem.**
 
