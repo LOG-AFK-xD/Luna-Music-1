@@ -1,4 +1,5 @@
-<p align="center"><a 𝗟𝘂𝗻𝗮 𝗠𝘂𝘀𝗶𝗰 href="https://t.me/Luna_MusicBot"><img src="https://github.com/unknownvip/Luna-Music/raw/main/driver/Lunalogo.png"></a></p>
+<h1 align="center"><b> ✨𝗟𝘂𝗻𝗮 𝗠𝘂𝘀𝗶𝗰⚡ </b></h1>
+<align="center"><a href="https://t.me/Luna_MusicBot"><img src="https://github.com/unknownvip/Luna-Music/raw/main/driver/Lunalogo.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
