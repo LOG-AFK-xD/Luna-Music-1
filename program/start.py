@@ -53,46 +53,33 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Aʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴏɴ ɢʀᴏᴜᴘs ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ Tᴇʟᴇɢʀᴀᴍ's ᴠɪᴅᴇᴏ ᴄʜᴀᴛs!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **Fɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ Bᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚 Cᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
+🔖 **Tᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » ❓ Bᴀsɪᴄ Gᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ Aᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
-                ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
-                [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
-                ],
-                [
+                   
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴩ", url=f"https://t.me/{The_Secret_worlds}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
-                    )
-                ],
-            ]
+                        "📣 Oꜰꜰɪᴄɪᴀʟ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Team_Blaze_Fighter}"
+                 
         ),
         disable_web_page_preview=True,
     )
 
 
 @Client.on_message(
-    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["alive", f"alive@{@Luna_MusicBot}"]) & filters.group & ~filters.edited
 )
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -102,9 +89,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ Group", url=f"https://t.me/{The_Secret_worlds}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Channel", url=f"https://t.me/{Team_Blaze_Fighter}"
                 ),
             ]
         ]
@@ -119,7 +106,7 @@ async def alive(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ping@{@Luna_MusicBot}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
@@ -127,7 +114,7 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@{Luna_MusicBot}"]) & ~filters.edited)
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
